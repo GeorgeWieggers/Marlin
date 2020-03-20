@@ -36,7 +36,7 @@
  * Advanced settings can be found in Configuration_adv.h
  *
  */
-#define CONFIGURATION_H_VERSION 020000
+#define CONFIGURATION_H_VERSION 020003
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -501,14 +501,14 @@
 
   // ANET A6 Firmware V2.0 Standard Extruder defaults:
   // PID-P: +022.20, PID-I: +001.08, PID-D: +114.00, PID-C: 1
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114.0
+  //#define DEFAULT_Kp 22.2
+  //#define DEFAULT_Ki 1.08
+  //#define DEFAULT_Kd 114.0
 
   // Tuned by ralf-e. Always re-tune for your machine!
-  //#define DEFAULT_Kp 16.83
-  //#define DEFAULT_Ki 1.02
-  //#define DEFAULT_Kd 69.29
+  #define DEFAULT_Kp 16.83
+  #define DEFAULT_Ki 1.02
+  #define DEFAULT_Kd 69.29
 
 #endif // PIDTEMP
 
@@ -786,7 +786,7 @@
 
 // ANET A6 Firmware V2.0 defaults (Amax):
 // Amx x: 9000, Amax Y: 5000, Amax z: 50, Amax e: 10000
-#define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 50,  10000 }
+#define DEFAULT_MAX_ACCELERATION      { 9000, 5000, 50,  10000 }
 //#define DEFAULT_MAX_ACCELERATION      { 10000, 10000, 200, 10000 }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
@@ -805,7 +805,7 @@
 
 // ANET A6 Firmware V2.0 defaults:
 // Accel: 1000 A-retract: 1000
-#define DEFAULT_ACCELERATION          400    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
 
@@ -1366,8 +1366,8 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 10              // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 3      // Don't use more than 15 points per axis, implementation limited.
+  #define MESH_INSET 1              // Set Mesh bounds as an inset region of the bed
+  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   #define UBL_MESH_EDIT_MOVES_Z     // Sophisticated users prefer no movement of nozzle
@@ -1383,7 +1383,7 @@
   //===========================================================================
 
   #define MESH_INSET 10          // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 3    // Don't use more than 7 points per axis, implementation limited.
+  #define GRID_MAX_POINTS_X 5    // Don't use more than 7 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   //#define MESH_G28_REST_ORIGIN // After homing all axes ('G28' or 'G28 XYZ') rest Z at Z_MIN_POS
