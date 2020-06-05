@@ -771,7 +771,7 @@
 
 // ANET A6 Firmware V2.0 defaults (Vmax):
 // Vmax x: 400, Vmax y: 400, Vmax z: 4, Vmax e: 25
-#define DEFAULT_MAX_FEEDRATE          { 400, 400, 4, 70 }
+#define DEFAULT_MAX_FEEDRATE          { 400, 400, 4, 25 }
 //#define DEFAULT_MAX_FEEDRATE          { 400, 400, 20, 50 }
 
 
