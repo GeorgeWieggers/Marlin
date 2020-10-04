@@ -759,7 +759,7 @@
 
 // ANET A6 Firmwae V2.0 defaults: (steps/mm)
 // Xsteps/mm: +100.0, Ysteps/mm: +100.0, Zsteps/mm: +0400.0, eSteps/mm: +0095.0
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 105 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 87.5 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80,  80, 400, 95 }
 
 /**
@@ -771,7 +771,7 @@
 
 // ANET A6 Firmware V2.0 defaults (Vmax):
 // Vmax x: 400, Vmax y: 400, Vmax z: 4, Vmax e: 25
-#define DEFAULT_MAX_FEEDRATE          { 400, 400, 4, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 400, 400, 50, 250 }
 //#define DEFAULT_MAX_FEEDRATE          { 400, 400, 20, 50 }
 
 
@@ -1287,8 +1287,8 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
-#define AUTO_BED_LEVELING_UBL
+#define AUTO_BED_LEVELING_BILINEAR
+//#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
 /**
