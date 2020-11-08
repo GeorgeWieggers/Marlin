@@ -503,10 +503,10 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    // Anet A6 / E3D hotend
-    #define DEFAULT_Kp 17.35
-    #define DEFAULT_Ki 1.38
-    #define DEFAULT_Kd 54.74
+    // Anet A8 / E3D volcoano hotend
+    #define DEFAULT_Kp 34.3
+    #define DEFAULT_Ki 2.81
+    #define DEFAULT_Kd 104.8
   #endif
 #endif // PIDTEMP
 
