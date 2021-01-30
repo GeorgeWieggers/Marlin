@@ -132,7 +132,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "SKR-A8"
+#define CUSTOM_MACHINE_NAME "SKR-A8+"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -1109,7 +1109,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR false
+#define INVERT_Y_DIR true
 #define INVERT_Z_DIR false
 
 // @section extruder
@@ -1155,12 +1155,12 @@
 //#define Y_MAX_POS Y_BED_SIZE
 //#define Z_MAX_POS 200
 
-#define X_BED_SIZE 220
-#define Y_BED_SIZE 220
+#define X_BED_SIZE 300
+#define Y_BED_SIZE 300
 #define X_MIN_POS -16
 #define Y_MIN_POS -34
 #define Z_MIN_POS 0
-#define Z_MAX_POS 250
+#define Z_MAX_POS 350
 
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
