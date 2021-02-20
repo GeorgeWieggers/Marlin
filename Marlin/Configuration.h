@@ -754,7 +754,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.6, 78.9, 400, 97.2 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 87.5 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1007,7 +1007,7 @@
  *     O-- FRONT --+
  */
 //#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
-#define NOZZLE_TO_PROBE_OFFSET { -38, -1, -2.15 }
+#define NOZZLE_TO_PROBE_OFFSET { -38, -1, -1.9 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1115,7 +1115,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1157,8 +1157,8 @@
 
 #define X_BED_SIZE 300
 #define Y_BED_SIZE 300
-#define X_MIN_POS -4
-#define Y_MIN_POS -17
+#define X_MIN_POS -16
+#define Y_MIN_POS -34
 #define Z_MIN_POS 0
 #define Z_MAX_POS 350
 
@@ -1338,7 +1338,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 5
+  #define GRID_MAX_POINTS_X 3
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
